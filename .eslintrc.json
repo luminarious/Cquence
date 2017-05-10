@@ -1,0 +1,36 @@
+{
+	"root": true,
+	"extends": "xo",
+	"env": {
+		"browser": true,
+		"es6": true
+	},
+	"rules": {
+		"semi": ["error", "never"],
+		"arrow-parens": ["error", "always"],
+		"brace-style": ["error", "1tbs", {
+			"allowSingleLine": true
+		}],
+		"max-statements-per-line": ["error", {
+			"max": 2
+		}],
+		"object-curly-spacing": ["error", "always"],
+		"no-var": "error",
+		"object-shorthand": ["error", "always"],
+		"prefer-arrow-callback": "error",
+		"prefer-const": ["error", {
+			"destructuring": "all"
+		}],
+		"prefer-numeric-literals": 2,
+		"linebreak-style": "off",
+		"prefer-reflect": ["error", { "exceptions": ["delete"]}],
+		"prefer-rest-params": "error",
+		"prefer-spread": "error",
+		"prefer-destructuring": ["warn", {
+			"array": true,
+			"object": true
+		}, {
+			"enforceForRenamedProperties": true
+		}]
+	}
+}
